@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-dark-bg text-dark-text;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-card;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-agricultural-700 rounded;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-agricultural-600;
+}
+
+/* Utility classes */
+.card {
+  @apply bg-dark-card rounded-lg border border-dark-border shadow-sm;
+}
+
+.button-primary {
+  @apply px-4 py-2 bg-accent-green hover:bg-agricultural-600 text-white rounded-lg font-medium transition-colors;
+}
+
+.button-secondary {
+  @apply px-4 py-2 bg-dark-card hover:bg-dark-border text-dark-text rounded-lg font-medium border border-dark-border transition-colors;
+}
+
+.input-field {
+  @apply w-full px-4 py-2 bg-dark-bg border border-dark-border rounded-lg text-dark-text placeholder-gray-500 focus:outline-none focus:border-accent-green focus:ring-1 focus:ring-accent-green;
+}
+
+.badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.badge-success {
+  @apply bg-agricultural-900 text-accent-lime;
+}
+
+.badge-warning {
+  @apply bg-orange-900 text-orange-100;
+}
+
+.badge-danger {
+  @apply bg-red-900 text-red-100;
+}

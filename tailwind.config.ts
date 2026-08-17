@@ -1,0 +1,46 @@
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    './app/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        agricultural: {
+          50: '#f0fdf4',
+          100: '#dcfce7',
+          200: '#bbf7d0',
+          300: '#86efac',
+          400: '#4ade80',
+          500: '#22c55e',
+          600: '#16a34a',
+          700: '#15803d',
+          800: '#166534',
+          900: '#145231',
+          950: '#0a3622',
+        },
+        dark: {
+          bg: '#0f2e1a',
+          card: '#1a3d2a',
+          border: '#2d5a3d',
+          text: '#e5e7eb',
+        },
+        accent: {
+          lime: '#bef264',
+          green: '#22c55e',
+        },
+      },
+      fontFamily: {
+        sans: ['system-ui', 'sans-serif'],
+      },
+      borderRadius: {
+        lg: '0.75rem',
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
